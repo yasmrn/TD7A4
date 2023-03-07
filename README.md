@@ -1,6 +1,8 @@
 # TD7A4
 
-Pour ouvrir l'application, il suffit d'ouvrir le terminal du dossier comportant le Dockerfile. Ce dernier va lui même créer les images utiles et mappe le port 5000 du conteneur au port 5000 de la machine hôte. On utilise la commande docker-compose up -d pour run l'application puis cela créera, on peut le voir sur Docker desktop, 2 conteneurs : 1 pour la base de données et 1 pour l'application. On se rend ensuite sur http://localhost:5000/ et on peut bien voir ma base de données + le contenu de mon file.txt. 
+Pour ouvrir l'application, tout d'abord il vous est nécessaire de clone le projet en local à l'aide de git clone <URL_dépôt> ensuite il suffit d'ouvrir le terminal du dossier comportant le Dockerfile et le docker-compose.yaml. Ce dernier va lui même créer les images utiles et mappe le port 5000 du conteneur au port 5000 de la machine hôte. Il va ensuite créer le network pour relier les deux conteneurs, créer un bind mount pour que notre conteneur de l'application python puisse récupérer les données de notre fichier "file.txt" en local et enfin créer un volume pour rendre les données de notre database persistants.
+On utilise la commande docker-compose up -d pour run l'application puis cela créera, on peut le voir sur Docker desktop, 2 conteneurs : 1 pour la base de données et 1 pour l'application. On se rend ensuite sur http://localhost:5000/ et on peut bien voir ma base de données + le contenu de mon file.txt. 
+
 
 
                                               ________________________________________________________________
