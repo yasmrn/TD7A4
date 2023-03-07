@@ -1,0 +1,16 @@
+Les volumes Docker sont des mécanismes de stockage de données pour les conteneurs Docker. Les avantages d'utiliser les volumes Docker sont les suivants :
+
+Persistance des données : Les volumes Docker sont persistants, ce qui signifie que les données stockées dans les volumes ne sont pas supprimées lorsque le conteneur est supprimé. Cela permet aux données d'être partagées entre plusieurs conteneurs et de survivre à l'arrêt et à la suppression des conteneurs.
+
+Partage de données entre conteneurs : Les volumes Docker peuvent être partagés entre plusieurs conteneurs Docker, ce qui permet de partager des données entre les conteneurs sans avoir besoin de les copier d'un conteneur à l'autre.
+
+Séparation des données et du code : En utilisant les volumes Docker, les données sont stockées à part du code dans le conteneur, ce qui permet de séparer la configuration et les données de l'application elle-même. Cela peut faciliter la mise à jour et la maintenance des applications.
+
+Flexibilité : Les volumes Docker peuvent être montés dans n'importe quel répertoire du système de fichiers du conteneur Docker, ce qui offre une grande flexibilité dans la manière dont les données sont stockées et partagées.
+
+Sauvegarde et récupération des données : Les volumes Docker peuvent être sauvegardés et restaurés facilement, ce qui permet de récupérer rapidement les données en cas de panne du système ou de perte de données.
+
+
+TEST pour apres rafraichissement.
+
+retest
